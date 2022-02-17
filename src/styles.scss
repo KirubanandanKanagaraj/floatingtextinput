@@ -1,0 +1,118 @@
+* {
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  width: 600px;
+  margin: 0 auto; 
+
+  h1{
+    margin: 5rem 0 2rem;
+  }
+
+  .input-container {
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+    .input-holder {
+      width: 100%;
+    }
+
+    input {
+      border: none;
+      width: 100%;
+      outline: 0;
+      font-size: 14px;
+      padding: 16px 0 2px;
+    }
+
+    label {
+      font-size: 16px;
+      position: absolute;
+      top: -2px;
+      transform-origin: top left;
+      transition: all 0.1s ease-in-out;
+      font-size: 14px;
+      transform: translate(0, 14px) scale(1);
+    }
+
+    .icon-holder{
+      line-height: 0;
+      svg{
+        color: #888;   
+        padding-right: 10px;
+      }
+    }
+
+    // Small size styles
+    &.sm{
+      input{
+        font-size: 12px;
+        padding: 12px 0 2px;
+      }
+      label {
+        font-size: 12px;
+        transform: translate(0, 12px) scale(1);
+      }
+    }
+
+    // Medium size styles
+    &.md{
+      input{
+        font-size: 14px;
+        padding: 16px 0 2px;
+      }
+      label {
+        font-size: 14px;
+        transform: translate(0, 14px) scale(1);
+      }
+    }
+
+    // Large size styles
+    &.lg{
+      input{
+        font-size: 17px;
+        padding: 18px 0 3px;
+      }
+      label {
+        font-size: 17px;
+        transform: translate(0, 17px) scale(1);
+      }
+    }
+
+    // Extra large size styles
+    &.xl{
+      input{
+        font-size: 18px;
+        padding: 20px 0 4px;
+      }
+      label {
+        font-size: 18px;
+        transform: translate(0, 18px) scale(1);
+      }
+    }
+
+    // Active state styles
+    &.focus{
+      border: 2px solid #4689cc;
+      svg{
+        color: #333;
+      }
+    }
+    &.active {
+      label {
+        transform: translate(0, 6px) scale(0.75);
+      }
+    }
+  }
+}
