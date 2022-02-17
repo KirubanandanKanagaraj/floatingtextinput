@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <form>
-        <h1 tabIndex="0">HeyFlow Assignment</h1>
+        <h1 tabIndex="0">Floating Label Input Textbox</h1>
         <TextInput
           labelText="First Name"
           inpID="firstName"
